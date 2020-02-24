@@ -3,6 +3,7 @@ import React from "react";
 export default function Menu() {
   return (
     <div className="main-menu">
+      <span className="line" ></span>
       <nav>
         <div className="navs">
           <span id="home" className="nav-links">
@@ -16,6 +17,7 @@ export default function Menu() {
           </span>
         </div>
       </nav>
+      
     </div>
   );
 }
