@@ -2,10 +2,10 @@ import React from "react";
 
 export default function Menu() {
   return (
-    <div className="main-menu">
+    <div className="menu">
       <span className="line" ></span>
       <nav>
-        <div className="navs">
+        <div className="navs fontSource">
           <span id="home" className="nav-links">
             Home
           </span>

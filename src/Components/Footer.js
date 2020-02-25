@@ -4,8 +4,11 @@ export default function Footer() {
   return (
     <div className="main-footer">
       <footer class="footer">
+        <div className="name-on-footer fontSource">
+          <span id="ronald">Ronald <span id="ceballos">Ceballos</span></span>
+        </div>
 
-        <div class="footer-name ftr">
+       {/*  <div class="footer-name ftr">
           <h3><span id="ronald">Ronald</span> <span id="ceballos">Ceballos</span></h3>
         </div>
 
@@ -22,7 +25,7 @@ export default function Footer() {
           <a href="https://www.linkedin.com/in/ronaldceballos/">
             <i class="fab fa-linkedin"></i>
           </a>
-        </div>
+        </div> */}
 
       </footer>
     </div>)

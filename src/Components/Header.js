@@ -14,7 +14,7 @@ export default function Header() {
       <div className="portName">
         <div className="name-details">
           <h1 className="name">Ronald Ceballos</h1>
-          <span className="jobTitle">FULL STACK WEB DEVELOPER</span>
+          <span className="fontSource">FULL STACK WEB DEVELOPER</span>
         </div>
       </div>
     </div>

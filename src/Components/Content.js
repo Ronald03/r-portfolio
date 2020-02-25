@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Content() {
   return (
-    <div className="main-content">
+    <div className="content">
       <div class="home-content ">
         <p>
           I'm Ronald &ndash;  a full stack web developer who 
