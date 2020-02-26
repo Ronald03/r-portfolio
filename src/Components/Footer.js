@@ -4,13 +4,18 @@ export default function Footer() {
   return (
     <div className="main-footer">
       <footer class="footer">
-        <div className="name-on-footer fontSource">
+        
+        <div className="name-on-footer fontSource center-content">
           <span id="ronald">Ronald <span id="ceballos">Ceballos</span></span>
         </div>
 
-       {/*  <div class="footer-name ftr">
-          <h3><span id="ronald">Ronald</span> <span id="ceballos">Ceballos</span></h3>
+        <div className="footer-address center-content">
+          <p>Lewisville, TX 75056 <i class="fas fa-map-marker-alt"></i></p>
         </div>
+
+        <div className="social center-content"><span>Social</span></div>
+
+       {/*
 
         <div class="footer-address ftr">
           <p>Lewisville, TX 75056 <i class="fas fa-map-marker-alt"></i></p>

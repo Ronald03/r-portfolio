@@ -311,14 +311,21 @@ code {
     padding: 10px;
     background-color:  #223843;
     color:#FFFFFF;
+    display: grid;
+    grid-template-rows: 100px auto auto;
   }
   
-  
+  .center-content {
+    text-align: center;
+    justify-content: center;
+    text-justify: auto;
+  }
+
   .ftr {
     padding-top: 10px;
   }
   
-  .footer-name {
+  .name-on-footer {
     width: 100%;
     font-size: 16px;
     text-align: center;
