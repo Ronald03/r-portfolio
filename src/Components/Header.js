@@ -11,8 +11,8 @@ export default function Header() {
         </a>
       </div>
 
-      <div className="portName">
-        <div className="name-details">
+      <div className="header-back-color">
+        <div className="name-title">
           <h1 className="name">Ronald Ceballos</h1>
           <span className="fontSource">FULL STACK WEB DEVELOPER</span>
         </div>

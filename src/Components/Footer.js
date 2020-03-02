@@ -5,13 +5,13 @@ export default function Footer() {
     <div className="main-footer">
       <footer class="footer">
 
-        <div className="footer-trial name-on-footer fontSource center-content">
+        <div className=" name-on-footer fontSource center-content">
         <span id="ronald">Ronald <span id="ceballos">Ceballos</span></span>
         </div>
-        <div className="footer-trial footer-address center-content">
+        <div className="footer-address center-content">
         <span>Lewisville, TX 75056 <i class="fas fa-map-marker-alt"></i></span>
         </div>
-        <div className="footer-trial foot3 social">
+        <div className="social center-content">
           <a href="https://github.com/Ronald03">
             <i class="fab fa-github"></i>
           </a>
@@ -20,16 +20,6 @@ export default function Footer() {
           </a>
         </div>
         
-        {/* <div className="name-on-footer fontSource center-content">
-          <span id="ronald">Ronald <span id="ceballos">Ceballos</span></span>
-        </div>
-
-        <div className="footer-address center-content">
-          <p>Lewisville, TX 75056 <i class="fas fa-map-marker-alt"></i></p>
-        </div>
-
-        <div className="social center-content"><span>Social</span></div>
- */}
        {/*
 
         <div class="footer-address ftr">
