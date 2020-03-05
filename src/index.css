@@ -116,22 +116,32 @@ padding: 0;
 	text-align: center;
 }
 
+.footer-address {
+	width: 100%;
+	text-align: center;
+	line-height: 1.5px;
+	padding: 10px;
+}
+
+.name-on-footer > span:first-of-type {
+	font-family: 'Fjalla One', sans-serif;
+	font-weight: bold;
+	color: red;
+}
+
 .social {
-  order: 5;
-  width: 100%;
-	padding: 0;
+  	width: 100%;
 	margin:0 auto 0 auto;
 	text-align: center;
 }
-a{
-  font-size: 34px;
-}
+
 .social > a {
 	text-decoration: none;
-	color: rgb(175, 23, 23);
+	color: rgb(252, 249, 249);
 	font-size: 25px;
 	margin-left: 25px;
 }
+
 .social > a:first-of-type {
 	margin-left: 0px;
 }
