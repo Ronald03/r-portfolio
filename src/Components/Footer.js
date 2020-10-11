@@ -1,6 +1,9 @@
 import React from "react";
+import "./Footer.css";
 
 export default function Footer() {
+  let footerHeight =document.getElementsByTagName("footer").offsetHeight;
+  console.log(footerHeight);
   return (
     <div className="main-footer">
       <footer class="footer">

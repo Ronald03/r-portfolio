@@ -1,21 +1,50 @@
 import React from "react";
 import Header from "./Header";
 import Menu from "./Menu";
-import Content from "./Content";
-import ImageProfile from "./ImageProfile";
-/* import Projects from "./Projects"; */
+import Home from "./Home";
+import Skills from './Skills'
 import Footer from "./Footer";
+import ProjectCards from "./ProjectCards";
+import { Tab } from "./constants";
 
-export default function App() {
-  return (
-    <div className="main-app">
-      <Header />
-      <Menu />
-      <Content />
-      <ImageProfile />
-      {/* <Projects /> */}
-      <Footer />
-      
-    </div>
-  );
+class App extends React.Component {
+
+  constructor() {
+    super()
+    this.state = {
+      onDisplay: Tab.SKILLS
+    }
+    this.handleTab = this.handleTab.bind(this)
+  }
+
+  renderTabContent() {
+    switch (this.state.onDisplay) {
+      case Tab.PROJECTS:
+        return (<ProjectCards />)
+      case Tab.SKILLS:
+        return (<Skills />)
+      default:
+        return (<Home />)
+    }
+  }
+
+  handleTab(tab) {
+    this.setState({ onDisplay: tab })
+  }
+
+  render() {
+    return (
+      <div className="main-app">
+        <div className="wrapper">
+          <Header />
+          <Menu handleTab={this.handleTab} state={this.state.onDisplay} tab />
+          {this.renderTabContent()}
+        </div>
+        <Footer />
+      </div>
+    );
+  }
+
 }
+
+export default App;

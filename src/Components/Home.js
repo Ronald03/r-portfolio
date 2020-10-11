@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function Content() {
+export default function Home(props) {
   return (
     <div className="content">
-      <div class="home-content ">
+      <div className="home-content fadeAnimation fadeIn">
         <p>
           I'm Ronald &ndash;  a full stack web developer who 
           enjoys from redeveloping a website to creating the 
@@ -14,9 +14,7 @@ export default function Content() {
           mobile-oriented designs, Efficient and Scalable.
         </p>
 
-        <p>
-          I hope you find interest on my skills and projects. Thanks for been here.
-        </p>
       </div>
+      <div class="profile-img"> </div>
     </div>)
 }

@@ -6,85 +6,57 @@ html {
 height: 100%;
 }
 
-body {
-margin: 0;
-padding: 0;
+body, #root {
+	margin: 0;
+	padding: 0;
 }
 
-#root {
-  height: 100vh;
-	margin: 0 15% 0 15%;
-  padding: 0;
-  background-color: coral;
+.main-app {
+	min-height: 100%;
+}
+.wrapper {
+	min-height: calc(100vh - 70px);
 }
 
 .fontSource {
   font-family: 'Source Sans Pro', 'sans-serif';
 }
 
-/* -------- HEADER COMPONENT -------- */
-.header {
-  display: flex;
-  flex-wrap: wrap;
-  height: auto;
-}
-
-.portLogo {
-  width: 100px;
-  margin: auto;
-}
-
-#logoImg {
-	width:100%;
-}
-
-.header-color {
-  margin-top: 10px;
-  width: 100%;
-	background: linear-gradient(to left, #47e5bc 29%, #ffffff 102%);
-}
-
-.name-title {
-  text-align: center;
-}
-
-/* --------- MENU COMPONENT --------- */
-
-.line {
-  display: none;
-}
-
-.navs {
-  margin-top: 15px;
-  list-style: none;
-	text-align: center;
-	padding: 0;
-}
-
-.nav-links {
-  padding-top: 10px;
-  margin-left: 25px;
-  font-family: 'Source Sans Pro', sans-serif;
-	letter-spacing: 5px;
-	cursor: pointer;
-}
-
-.nav-links:first-of-type {
-  margin-left: 0px;
-}
 
 /* --------- CONTENT COMPONENT --------- */
 
 .home-content {
-  width:100%;
-  margin:20px auto;
-  padding: 0;
-  font-size: 16px;
-  justify-content: center;
-	text-align: center;
+  	width: 100%;
+  	margin: 20px auto;
+ 	padding: 0;
+  	font-size: 16px;
+  	justify-content: center;
+  	text-align: center;
 	line-height: 25px;
 	font-family: 'Merriweather', 'serif';
 }
+
+.fadeAnimation {
+	-webkit-animation-duration: 10s;
+	animation-duration: 2s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+ }
+ 
+ @keyframes fadeIn {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+ }
+ 
+ .fadeIn {
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+ }
 
 
 /* --------- ImageProfile COMPONENT ---------- */
@@ -99,53 +71,15 @@ padding: 0;
 	border-left-width: 5px;
 }
 
-/* ---------- Footer COMPONENT ---------- */
+@media screen and (min-width: 991px) {
 
-.footer {
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	padding: 10px;
-	background-color:  #223843;
-	color:#FFFFFF;
-}
+	#root {
+		margin: 0 15% 0 15% !important;
+	}
 
-.name-on-footer {
-	width: 100%;
-	font-size: 24px;
-	text-align: center;
-}
+	.home-content {
+		width: 50% !important;
+		margin-top: 25px 10px 0px 10px;
+	}
 
-.footer-address {
-	width: 100%;
-	text-align: center;
-	line-height: 1.5px;
-	padding: 10px;
-}
-
-.name-on-footer > span:first-of-type {
-	font-family: 'Fjalla One', sans-serif;
-	font-weight: bold;
-	color: red;
-}
-
-.social {
-  	width: 100%;
-	margin:0 auto 0 auto;
-	text-align: center;
-}
-
-.social > a {
-	text-decoration: none;
-	color: rgb(252, 249, 249);
-	font-size: 25px;
-	margin-left: 25px;
-}
-
-.social > a:first-of-type {
-	margin-left: 0px;
-}
-
-.social > a:hover {
-	color:#47e5bc;
 }

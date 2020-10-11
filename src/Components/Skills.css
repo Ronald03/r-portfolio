@@ -1,0 +1,63 @@
+
+.skills-content {
+	padding: 20px 10% 20px 10%;
+}
+
+.skill-header {
+	font-size: 1em;
+}
+
+.skill-list-style {
+	margin-bottom: 10px;
+	padding: 5px 10px 10px 40px;
+	margin-left: 20px;
+	margin-right: 20px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: red;
+}
+
+.ul-no-style {
+	list-style-type: circle;
+    margin: 0;
+    padding: 0;
+}
+.skill-desc {
+	font-size: 13px;
+}
+
+.skillStory {
+	margin-top: 10px;
+	padding:15px;
+	justify-content: center;
+	text-align: center;
+	line-height: 25px;
+	font-family: 'Merriweather', serif;
+	font-size: 1em;
+}
+
+
+@media screen and (min-width: 991px) {
+	.skills-content {
+		padding: 40px 10px !important;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.skill-common {
+		width: calc((100% - 10px) / 3);
+	}
+
+	.frontEnd {
+		order: 3;
+	}
+	.backEnd {
+		order: 6;
+	}
+	.programming { 
+		order: 4;
+	}
+
+	.skillStory {
+		order: 5;
+	}
+}
