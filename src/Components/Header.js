@@ -18,7 +18,7 @@ export default function Header() {
       <div className="header__background">
         <div className="header__nameTitle">
           <h1 className="name">Ronald Ceballos</h1>
-          <span className="fontSource">JAVASCRIPT / REACT DEVELOPER</span>
+          <span className="fontSource">JAVASCRIPT-REACT DEVELOPER</span>
         </div>
       </div>
     </div>
