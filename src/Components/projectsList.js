@@ -37,7 +37,7 @@ const projectsArray = [
     id: 4,
     name: "Messenger App",
     img:
-      "https://upload.wikimedia.org/wikipedia/commons/3/3b/Facebook_Messenger_logo.svg",
+      "https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Messenger_logo_2018.svg",
     alt: "fb Messenger",
     gitLink: "https://github.com/Ronald03/messenger-app",
     liveLink: "https://facebook-messenger-97a4a.web.app/",
